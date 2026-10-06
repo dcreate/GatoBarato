@@ -9,6 +9,10 @@ body {
     background: #f3f3f3;
     color: #222;
     min-height: 100vh;
+    background-image: url(img/gatobarato.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
 }
 
 
