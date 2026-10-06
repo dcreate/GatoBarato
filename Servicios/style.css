@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f3f3;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px 18px 30px;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.eslogan {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+}
+
+.pregunta {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+
+/* SERVICIOS */
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.servicio {
+    width: 100%;
+    border: none;
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.servicio:active {
+    transform: scale(0.97);
+}
+
+
+.servicio:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.13);
+}
+
+
+.icono {
+    font-size: 32px;
+    width: 55px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+.servicio strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+
+.servicio small {
+    display: block;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* SEPARADOR */
+
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0 18px;
+    color: #888;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.separador span {
+    font-size: 13px;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp {
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 16px;
+    background: #25D366;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    transition: transform 0.15s ease;
+}
+
+.whatsapp:active {
+    transform: scale(0.97);
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 4px;
+}
+
+footer small {
+    display: block;
+    margin-top: 15px;
+    color: #999;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.55);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+
+.modal.activo {
+    display: flex;
+}
+
+
+.modal-contenido {
+    background: white;
+
+    width: 100%;
+    max-width: 400px;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    position: relative;
+
+    text-align: center;
+
+    animation: aparecer 0.2s ease;
+}
+
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+.modal-contenido h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+
+#mensajeSeleccionado {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* CERRAR */
+
+.cerrar {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: none;
+
+    font-size: 30px;
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+/* NUMEROS */
+
+.numero {
+    width: 100%;
+
+    border: none;
+
+    background: #f2f2f2;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    margin-top: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+
+.numero:hover {
+    background: #e5e5e5;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 400px) {
+
+    .contenedor {
+        padding: 20px 14px;
+    }
+
+    .servicio {
+        padding: 14px;
+    }
+
+    .encabezado h1 {
+        font-size: 27px;
+    }
+
+}
