@@ -3,866 +3,672 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-    <title>Gato Barato | Soporte y Mantenimiento de Computadoras</title>
-
-    <meta name="description"
-          content="Gato Barato - Soporte técnico, mantenimiento de computadoras, laptops, impresoras, cámaras y más. Soluciones rápidas sin arañar tu bolsillo.">
-
-    <link rel="icon" href="img/logo.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
+    <title>Gato Barato | Soporte y Soluciones Tecnológicas</title>
+    <meta name="description" content="Gato Barato - Soporte técnico, mantenimiento de computadoras, instalación de cámaras, impresoras y soluciones tecnológicas.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="img/gatobarato.png" rel="icon">
+    <meta property="og:site_name" content="Gato Barato">
+    <meta property="og:title" content="Gato Barato - Soporte Técnico">
+    <meta property="og:description" content="Mantenimiento de computadoras, laptops, impresoras e instalación de cámaras de videovigilancia.">
+    <meta property="og:image" content="https://dcreate.github.io/GatoBarato/img/gatobarato.jpg">
+    <meta property="og:url" content="https://dcreate.github.io/GatoBarato/">
+    <meta name="twitter:card" content="summary_large_image">      
 </head>
-
 <body>
-
-<!-- =========================
-     LOADER
-========================= -->
-
-<div id="loader">
-
-    <img src="img/logo.png"
-         alt="Gato Barato"
-         class="loader-logo">
-
-    <div class="loader-text">
-        Gato Barato
-    </div>
-
-    <div class="loader-bar">
-        <span></span>
-    </div>
-
-</div>
-
-
-<!-- =========================
-     NAVBAR
-========================= -->
-
-<header class="navbar">
-
-    <div class="container nav-container">
-
-        <a href="#inicio" class="logo">
-
-            <img src="img/logo.png"
-                 alt="Gato Barato"
-                 class="logo-img">
-
-            <div class="logo-text">
-                <strong>GATO</strong>
-                <span>BARATO</span>
-            </div>
-
-        </a>
-
-
-        <nav class="nav-menu" id="navMenu">
-
-            <a href="#inicio">Inicio</a>
-
-            <a href="#servicios">Servicios</a>
-
-            <a href="#promociones">Promociones</a>
-
-            <a href="#nosotros">Nosotros</a>
-
-            <a href="#contacto">Contacto</a>
-
-            <a href="https://wa.me/527858306688"
-               target="_blank"
-               class="nav-whatsapp">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-                WhatsApp
-
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <img src="img/logo.png" alt="Gato Barato">
+                <span>Gato<span>Barato</span></span>
             </a>
 
-        </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
 
-        <button class="menu-toggle" id="menuToggle">
+    <!-- ================= HERO ================= -->
 
-            <i class="fa-solid fa-bars"></i>
+    <section class="hero" id="inicio">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
 
-        </button>
+            <div class="hero-text">
 
-    </div>
+                <span class="hero-tag">
+                    <i class="fas fa-cat"></i>
+                    Soluciones tecnológicas
+                </span>
 
-</header>
+                <h1>
+                    Soluciones rápidas
+                    <span>sin arañar tu bolsillo.</span>
+                </h1>
+
+                <p>
+                    Soporte técnico, mantenimiento, instalación y soluciones
+                    tecnológicas para tu hogar o negocio.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#trabajos" class="btn btn-primary">
+                        <i class="fas fa-images"></i>
+                        Ver mis trabajos
+                    </a>
+                    <a href="https://wa.me/527858306688"
+                    class="btn btn-whatsapp"
+                    target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-logo">
+                <div class="logo-circle">
+                    <!--LOGO -->
+                    <img src="img/logo.png" alt="Logo Gato Barato">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- ================= SERVICIOS ================= -->
 
-<!-- =========================
-     HERO
-========================= -->
+    <section class="section services" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <span>¿Qué hacemos?</span>
+                <h2>Nuestros servicios</h2>
+                <p>
+                    Soluciones para mantener tus equipos funcionando
+                    correctamente.
+                </p>
+            </div>
 
-<section class="hero" id="inicio">
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Mantenimiento de computadoras</h3>
+                    <p>
+                        Limpieza interna, cambio de pasta térmica,
+                        optimización y mantenimiento preventivo.
+                    </p>
+                </article>
 
-    <div class="hero-bg"></div>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Impresoras</h3>
+                    <p>
+                        Mantenimiento, configuración e instalación
+                        de impresoras.
+                    </p>
+                </article>
 
-    <div class="container hero-container">
+                <article class="service-card">
 
-        <div class="hero-content">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
 
-            <div class="hero-badge">
+                    <h3>Cámaras de seguridad</h3>
 
-                <span class="pulse"></span>
+                    <p>
+                        Instalación y configuración de sistemas
+                        de videovigilancia.
+                    </p>
+                </article>
 
-                SOPORTE TÉCNICO
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-windows"></i>
+                    </div>
+
+                    <h3>Sistemas y programas</h3>
+
+                    <p>
+                        Instalación de sistemas operativos,
+                        programas y configuración de equipos.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fas fa-hard-drive"></i>
+                    </div>
+
+                    <h3>Recuperación de información</h3>
+
+                    <p>
+                        Diagnóstico y recuperación de información
+                        cuando sea técnicamente posible.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+
+                    <h3>Actualización de equipos</h3>
+                    <p>
+                        Instalación de SSD, memoria RAM y mejoras
+                        para aumentar el rendimiento.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= TRABAJOS ================= -->
+
+    <section class="section portfolio" id="trabajos">
+        <div class="container">
+            <div class="section-title">
+                <span>Portafolio</span>
+                <h2>Algunos de nuestros trabajos</h2>
+                <p>
+                    Una muestra de los proyectos y servicios realizados.
+                </p>
+            </div>
+
+
+            <!-- FILTROS -->
+
+            <div class="portfolio-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    Todos
+                </button>
+
+                <button class="filter-btn" data-filter="computadoras">
+                    Computadoras
+                </button>
+
+                <button class="filter-btn" data-filter="camaras">
+                    Cámaras
+                </button>
+
+                <button class="filter-btn" data-filter="impresoras">
+                    Impresoras
+                </button>
+
+                <button class="filter-btn" data-filter="diseño">
+                    Diseños
+                </button>
 
             </div>
 
 
-            <h1>
+            <!-- GALERÍA -->
 
-                Soluciones rápidas
-
-                <span>sin arañar tu bolsillo.</span>
-
-            </h1>
+            <div class="portfolio-grid">
 
 
-            <p>
+                <!-- TRABAJO 1 -->
 
-                Mantenimiento, reparación y soporte para tu computadora,
-                laptop, impresora y mucho más.
+                <article class="portfolio-item"
+                        data-category="computadoras">
 
-            </p>
+                    <div class="portfolio-image">
+
+                        <img src="img/trabajo1.jpg"
+                            alt="Limpieza y mantenimiento a ventilador/disipador de procesador en laptop"
+                            loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <button class="view-image"
+                                    data-image="img/trabajo1.jpg"
+                                    data-title="Limpieza y mantenimiento a ventilador/disipador de procesador en laptop">
+
+                                <i class="fas fa-expand"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <span>Computadoras</span>
+
+                        <h3>Mantenimiento de equipo</h3>
+
+                    </div>
+
+                </article>
 
 
-            <div class="hero-buttons">
+                <!-- TRABAJO 2 -->
 
-                <a href="#servicios"
-                   class="btn btn-primary">
+                <article class="portfolio-item"
+                        data-category="camaras">
 
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <div class="portfolio-image">
 
-                    Ver servicios
+                        <img src="img/trabajo2.jpg"
+                            alt="Instalación de cámara"
+                            loading="lazy">
 
-                </a>
+                        <div class="portfolio-overlay">
+
+                            <button class="view-image"
+                                    data-image="img/trabajo2.jpg"
+                                    data-title="Instalación de cámaras IP hikvision">
+
+                                <i class="fas fa-expand"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <span>Cámaras</span>
+
+                        <h3>Instalación de cámaras IP hikvision</h3>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TRABAJO 3 -->
+
+                <article class="portfolio-item"
+                        data-category="impresoras">
+
+                    <div class="portfolio-image">
+
+                        <img src="img/trabajo3.jpg"
+                            alt="Mantenimiento de impresora"
+                            loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <button class="view-image"
+                                    data-image="img/trabajo3.jpg"
+                                    data-title="Mantenimiento de impresora">
+
+                                <i class="fas fa-expand"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <span>Impresoras</span>
+                        <h3>Limpieza de lector de cabezales Hp Tank</h3>
+                    </div>
+
+                </article>
+
+                <!-- TRABAJO 4 -->
+
+                <article class="portfolio-item"
+                        data-category="diseño">
+
+                    <div class="portfolio-image">
+
+                        <img src="img/trabajo4.jpg"
+                            alt="Diseño Gato Barato"
+                            loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <button class="view-image"
+                                    data-image="img/trabajo4.jpg"
+                                    data-title="Diseño Gato Barato">
+
+                                <i class="fas fa-expand"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <span>Diseño</span>
+
+                        <h3>Elaboracion de etiquetas y/o sticker</h3>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TRABAJO 5 -->
+
+                <article class="portfolio-item"
+                        data-category="computadoras">
+
+                    <div class="portfolio-image">
+
+                        <img src="img/trabajo5.jpg"
+                            alt="Cambio de disco"
+                            loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <button class="view-image"
+                                    data-image="img/trabajo5.jpg"
+                                    data-title="Cambio por unidad solida de almacenamiento">
+
+                                <i class="fas fa-expand"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <span>Computadoras</span>
+
+                        <h3>Cambio de unidad de almacenamiento</h3>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TRABAJO 6 -->
+
+                <article class="portfolio-item"
+                        data-category="computadoras">
+
+                    <div class="portfolio-image">
+
+                        <img src="img/trabajo6.jpg"
+                            alt="Reemplazo de display"
+                            loading="lazy">
+
+                        <div class="portfolio-overlay">
+
+                            <button class="view-image"
+                                    data-image="img/trabajo6.jpg"
+                                    data-title="Cambio de pantalla de laptop">
+
+                                <i class="fas fa-expand"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <span>Computadoras</span>
+
+                        <h3>Reemplazo de display a laptop</h3>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FRASE ================= -->
+
+    <section class="quote-section">
+
+        <div class="container">
+
+            <div class="quote-content">
+
+                <i class="fas fa-cat"></i>
+
+                <h2>
+                    "Le damos 7 vidas a tu computadora."
+                </h2>
+
+                <p>
+                    Maullamos soluciones, no precios altos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOSOTROS ================= -->
+
+    <section class="section about" id="nosotros">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+
+                <div class="about-logo">
+                    <img src="img/logo.png" alt="Gato Barato">
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span class="section-label">
+                    Gato Barato
+                </span>
+
+                <h2>
+                    Tecnología sin complicaciones.
+                </h2>
+
+                <p>
+                    En Gato Barato ofrecemos soluciones tecnológicas
+                    prácticas para hogares, negocios y oficinas.
+                </p>
+
+                <p>
+                    Nuestro objetivo es ayudarte a mantener tus equipos
+                    funcionando correctamente y encontrar soluciones
+                    rápidas a tus problemas tecnológicos.
+                </p>
+
+
+                <div class="about-features">
+
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        Atención personalizada
+                    </div>
+
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        Diagnóstico de equipos
+                    </div>
+
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        Soluciones prácticas
+                    </div>
+
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        Soporte tecnológico
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section class="section contact" id="contacto">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>¿Necesitas ayuda?</span>
+
+                <h2>Contáctanos</h2>
+
+                <p>
+                    Cuéntanos qué necesitas y con gusto te ayudamos.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
 
 
                 <a href="https://wa.me/527858306688"
-                   target="_blank"
-                   class="btn btn-whatsapp">
+                target="_blank"
+                class="contact-card">
 
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
 
-                    Cotizar por WhatsApp
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>785 830 6688</p>
+                    </div>
+
+                </a>
+
+
+                <a href="tel:7858306688"
+                class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>785 830 6688</p>
+                    </div>
+
+                </a>
+
+
+                <a href="tel:2201501330"
+                class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-mobile-screen"></i>
+                    </div>
+
+                    <div>
+                        <h3>Teléfono / WhatsApp</h3>
+                        <p>220 150 1330</p>
+                    </div>
 
                 </a>
 
             </div>
 
 
-            <div class="hero-trust">
-
-                <div>
-
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    Atención personalizada
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    Precios accesibles
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- LOGO PRINCIPAL -->
-
-        <div class="hero-visual">
-
-            <div class="hero-glow"></div>
-
-            <img src="img/logo.png"
-                 alt="Gato Barato"
-                 class="hero-logo">
-
-
-            <div class="floating-card card-1">
-
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-
-                <div>
-
-                    <strong>Soporte</strong>
-
-                    <span>Profesional</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="floating-card card-2">
-
-                <i class="fa-solid fa-bolt"></i>
-
-                <div>
-
-                    <strong>Rápido</strong>
-
-                    <span>Servicio</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="floating-card card-3">
-
-                <i class="fa-solid fa-shield-halved"></i>
-
-                <div>
-
-                    <strong>Seguro</strong>
-
-                    <span>Confiable</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     STATS
-========================= -->
-
-<section class="stats">
-
-    <div class="container stats-grid">
-
-        <div class="stat">
-
-            <i class="fa-solid fa-computer"></i>
-
-            <strong>PC</strong>
-
-            <span>Computadoras</span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <i class="fa-solid fa-laptop"></i>
-
-            <strong>Laptop</strong>
-
-            <span>Mantenimiento</span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <i class="fa-solid fa-print"></i>
-
-            <strong>Impresoras</strong>
-
-            <span>Soporte</span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <i class="fa-solid fa-video"></i>
-
-            <strong>Cámaras</strong>
-
-            <span>Instalación</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     SERVICIOS
-========================= -->
-
-<section class="section services" id="servicios">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                LO QUE HACEMOS
-            </span>
-
-            <h2>
-                Nuestros <span>servicios</span>
-            </h2>
-
-            <p>
-                Soluciones tecnológicas para mantener tus equipos
-                funcionando correctamente.
-            </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-computer"></i>
-
-                </div>
-
-                <h3>Mantenimiento</h3>
-
-                <p>
-                    Limpieza interna, cambio de pasta térmica,
-                    diagnóstico y mantenimiento preventivo.
-                </p>
-
-                <button onclick="openWhatsApp('Mantenimiento de computadora')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-laptop"></i>
-
-                </div>
-
-                <h3>Laptops</h3>
-
-                <p>
-                    Limpieza, optimización, reparación,
-                    cambio de componentes y diagnóstico.
-                </p>
-
-                <button onclick="openWhatsApp('Servicio para laptop')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-hard-drive"></i>
-
-                </div>
-
-                <h3>SSD y RAM</h3>
-
-                <p>
-                    Actualiza tu equipo con almacenamiento SSD
-                    y mayor memoria RAM.
-                </p>
-
-                <button onclick="openWhatsApp('Actualización SSD o RAM')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-virus-slash"></i>
-
-                </div>
-
-                <h3>Virus y malware</h3>
-
-                <p>
-                    Eliminación de virus, malware y programas
-                    innecesarios que hacen lento tu equipo.
-                </p>
-
-                <button onclick="openWhatsApp('Eliminación de virus y malware')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-print"></i>
-
-                </div>
-
-                <h3>Impresoras</h3>
-
-                <p>
-                    Instalación, configuración y soporte
-                    para impresoras.
-                </p>
-
-                <button onclick="openWhatsApp('Servicio para impresora')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-video"></i>
-
-                </div>
-
-                <h3>Cámaras</h3>
-
-                <p>
-                    Instalación y configuración de cámaras
-                    de videovigilancia.
-                </p>
-
-                <button onclick="openWhatsApp('Instalación de cámaras')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-database"></i>
-
-                </div>
-
-                <h3>Recuperación de datos</h3>
-
-                <p>
-                    Recuperación de información de discos
-                    y dispositivos de almacenamiento.
-                </p>
-
-                <button onclick="openWhatsApp('Recuperación de datos')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-
-
-            <div class="service-card featured">
-
-                <div class="featured-label">
-                    MÁS SOLICITADO
-                </div>
-
-                <div class="service-icon">
-
-                    <i class="fa-solid fa-gears"></i>
-
-                </div>
-
-                <h3>Formateo y optimización</h3>
-
-                <p>
-                    Instalación de sistema operativo,
-                    programas y optimización general.
-                </p>
-
-                <button onclick="openWhatsApp('Formateo y optimización')">
-
-                    Solicitar servicio
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     COMPUTADORA LENTA
-========================= -->
-
-<section class="problem-section">
-
-    <div class="container problem-container">
-
-        <div class="problem-image">
-
-            <div class="problem-circle">
-
-                <i class="fa-solid fa-gauge-high"></i>
-
-            </div>
-
-        </div>
-
-
-        <div class="problem-content">
-
-            <span class="section-tag">
-                ¿TE PASA ESTO?
-            </span>
-
-            <h2>
-                ¿Tu computadora está <span>lenta?</span>
-            </h2>
-
-            <p>
-                No necesariamente necesitas comprar una computadora nueva.
-                Muchas veces una buena limpieza, mantenimiento u actualización
-                puede darle una nueva vida.
-            </p>
-
-
-            <ul>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Tarda demasiado en encender
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Se congela constantemente
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Tiene demasiados programas
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Se calienta demasiado
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Está llena de polvo
-                </li>
-
-            </ul>
-
-
-            <button class="btn btn-primary"
-                    onclick="openWhatsApp('Diagnóstico de computadora')">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                Quiero un diagnóstico
-
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PROMOCIONES
-========================= -->
-
-<section class="section promotions" id="promociones">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                PROMOCIONES
-            </span>
-
-            <h2>
-                Dale <span>7 vidas</span> a tu computadora
-            </h2>
-
-            <p>
-                Mantén tu equipo limpio, rápido y funcionando correctamente.
-            </p>
-
-        </div>
-
-
-        <div class="promo-card">
-
-            <div class="promo-logo">
-
-                <img src="img/logo.png"
-                     alt="Gato Barato">
-
-            </div>
-
-
-            <div class="promo-content">
-
-                <span>
-                    MANTENIMIENTO
-                </span>
+            <div class="contact-cta">
 
                 <h3>
-                    ¡Tu PC también necesita vacaciones!
+                    ¿Tienes un equipo que necesita atención?
                 </h3>
 
                 <p>
-                    Limpieza interna + cambio de pasta térmica +
-                    optimización + diagnóstico.
+                    Mándanos un mensaje y cuéntanos qué problema presenta.
                 </p>
 
-                <button class="btn btn-primary"
-                        onclick="openWhatsApp('Promoción de mantenimiento de computadora')">
+                <a href="https://wa.me/527858306688?text=Hola%20Gato%20Barato,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios."
+                target="_blank"
+                class="btn btn-whatsapp">
 
-                    Preguntar promoción
+                    <i class="fab fa-whatsapp"></i>
+                    Escribir por WhatsApp
 
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     NOSOTROS
-========================= -->
-
-<section class="section about" id="nosotros">
-
-    <div class="container about-container">
-
-        <div class="about-content">
-
-            <span class="section-tag">
-                SOBRE NOSOTROS
-            </span>
-
-            <h2>
-                Tecnología sin <span>complicaciones.</span>
-            </h2>
-
-            <p>
-                En Gato Barato buscamos ofrecer soluciones tecnológicas
-                prácticas, rápidas y accesibles.
-            </p>
-
-            <p>
-                Nuestro objetivo es ayudarte a mantener tus equipos
-                funcionando correctamente sin gastar de más.
-            </p>
-
-
-            <div class="about-features">
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <span>Atención personalizada</span>
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <span>Precios accesibles</span>
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <span>Soluciones prácticas</span>
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <span>Soporte técnico</span>
-
-                </div>
+                </a>
 
             </div>
 
         </div>
 
+    </section>
 
-        <div class="about-logo">
 
-            <div class="about-logo-circle">
+    <!-- ================= FOOTER ================= -->
 
-                <img src="img/logo.png"
-                     alt="Gato Barato">
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <img src="img/logo.png" alt="Gato Barato">
+
+                <div>
+
+                    <h3>Gato Barato</h3>
+
+                    <p>
+                        Soluciones rápidas sin arañar tu bolsillo.
+                    </p>
+
+                </div>
 
             </div>
 
-            <h3>
-                “Maullamos soluciones,<br>
-                no precios altos.”
-            </h3>
 
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     CONTACTO
-========================= -->
-
-<section class="contact" id="contacto">
-
-    <div class="contact-glow"></div>
-
-    <div class="container contact-container">
-
-        <div class="contact-logo">
-
-            <img src="img/logo.png"
-                 alt="Gato Barato">
-
-        </div>
-
-
-        <div class="contact-content">
-
-            <span class="section-tag">
-                ¿NECESITAS AYUDA?
-            </span>
-
-            <h2>
-                Hablemos de tu <span>equipo.</span>
-            </h2>
-
-            <p>
-                Cuéntanos qué problema tienes y te ayudamos
-                a encontrar la mejor solución.
-            </p>
-
-
-            <div class="contact-buttons">
+            <div class="footer-social">
 
                 <a href="https://wa.me/527858306688"
-                   target="_blank"
-                   class="btn btn-whatsapp">
+                target="_blank"
+                aria-label="WhatsApp">
 
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    785 830 6688
-
-                </a>
-
-
-                <a href="https://wa.me/522201501330"
-                   target="_blank"
-                   class="btn btn-outline">
-
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    220 150 1330
+                    <i class="fab fa-whatsapp"></i>
 
                 </a>
 
@@ -870,152 +676,52 @@
 
         </div>
 
-    </div>
 
-</section>
+        <div class="footer-bottom">
 
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    <div class="container footer-container">
-
-        <div class="footer-brand">
-
-            <img src="img/logo.png"
-                 alt="Gato Barato">
-
-            <div>
-
-                <strong>GATO BARATO</strong>
-
-                <span>
-                    Soluciones rápidas sin arañar tu bolsillo
-                </span>
-
-            </div>
+            <p>
+                © <span id="year"></span> Gato Barato.
+                Todos los derechos reservados.
+            </p>
 
         </div>
 
-
-        <div class="footer-social">
-
-            <a href="https://wa.me/527858306688"
-               target="_blank">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-            </a>
-
-        </div>
+    </footer>
 
 
-        <div class="footer-copy">
+    <!-- ================= BOTÓN WHATSAPP ================= -->
 
-            © <span id="year"></span> Gato Barato.
-            Todos los derechos reservados.
+    <a href="https://wa.me/527858306688"
+    target="_blank"
+    class="floating-whatsapp"
+    aria-label="Contactar por WhatsApp">
 
-        </div>
+        <i class="fab fa-whatsapp"></i>
 
-    </div>
-
-</footer>
-
-
-
-<!-- =========================
-     WHATSAPP FLOAT
-========================= -->
-
-<a href="https://wa.me/527858306688"
-   target="_blank"
-   class="whatsapp-float">
-
-    <i class="fa-brands fa-whatsapp"></i>
-
-    <span>
-        WhatsApp
-    </span>
-
-</a>
+    </a>
 
 
+    <!-- ================= MODAL GALERÍA ================= -->
 
-<!-- =========================
-     WHATSAPP MODAL
-========================= -->
+    <div class="image-modal" id="imageModal">
 
-<div class="modal-overlay" id="whatsappModal">
-
-    <div class="whatsapp-modal">
-
-        <button class="modal-close"
-                onclick="closeWhatsappModal()">
-
-            <i class="fa-solid fa-xmark"></i>
-
+        <button class="modal-close" id="modalClose">
+            <i class="fas fa-xmark"></i>
         </button>
 
+        <div class="modal-content">
 
-        <img src="img/logo.png"
-             alt="Gato Barato"
-             class="modal-logo">
+            <img id="modalImage"
+                src=""
+                alt="">
 
-
-        <h3>
-            ¿Qué servicio necesitas?
-        </h3>
-
-        <p>
-            Selecciona una opción y te contactaremos por WhatsApp.
-        </p>
-
-
-        <div class="modal-options">
-
-            <button onclick="openWhatsApp('Mantenimiento de computadora')">
-                <i class="fa-solid fa-computer"></i>
-                Mantenimiento
-            </button>
-
-            <button onclick="openWhatsApp('Formateo de computadora')">
-                <i class="fa-solid fa-hard-drive"></i>
-                Formateo
-            </button>
-
-            <button onclick="openWhatsApp('Laptop')">
-                <i class="fa-solid fa-laptop"></i>
-                Laptop
-            </button>
-
-            <button onclick="openWhatsApp('Impresora')">
-                <i class="fa-solid fa-print"></i>
-                Impresora
-            </button>
-
-            <button onclick="openWhatsApp('Cámaras')">
-                <i class="fa-solid fa-video"></i>
-                Cámaras
-            </button>
-
-            <button onclick="openWhatsApp('Otro servicio')">
-                <i class="fa-solid fa-ellipsis"></i>
-                Otro
-            </button>
+            <div class="modal-caption" id="modalCaption"></div>
 
         </div>
 
     </div>
 
-</div>
 
-
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

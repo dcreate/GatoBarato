@@ -1,64 +1,29 @@
-/* =========================
-   CONFIGURACIÓN
-========================= */
-
-const WHATSAPP_NUMBER = "527858306688";
-
-
-/* =========================
-   LOADER
-========================= */
-
-window.addEventListener("load", () => {
-
-    const loader = document.getElementById("loader");
-
-    setTimeout(() => {
-
-        loader.classList.add("hide");
-
-    }, 700);
-
-});
+/* =========================================================
+   GATO BARATO
+   SCRIPT.JS
+   ========================================================= */
 
 
-/* =========================
-   AÑO AUTOMÁTICO
-========================= */
+/* ================= MENÚ ================= */
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
-
-
-
-/* =========================
-   MENÚ MÓVIL
-========================= */
-
-const menuToggle =
-    document.getElementById("menuToggle");
-
-const navMenu =
-    document.getElementById("navMenu");
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.getElementById("nav");
 
 
 menuToggle.addEventListener("click", () => {
 
-    navMenu.classList.toggle("active");
+    nav.classList.toggle("active");
 
-    const icon =
-        menuToggle.querySelector("i");
+    const icon = menuToggle.querySelector("i");
 
-    if (navMenu.classList.contains("active")) {
+    if (nav.classList.contains("active")) {
 
         icon.classList.remove("fa-bars");
-
         icon.classList.add("fa-xmark");
 
     } else {
 
         icon.classList.remove("fa-xmark");
-
         icon.classList.add("fa-bars");
 
     }
@@ -66,19 +31,17 @@ menuToggle.addEventListener("click", () => {
 });
 
 
-/* Cerrar menú al seleccionar opción */
+/* CERRAR MENÚ AL SELECCIONAR UNA OPCIÓN */
 
-document.querySelectorAll(".nav-menu a").forEach(link => {
+document.querySelectorAll(".nav a").forEach(link => {
 
     link.addEventListener("click", () => {
 
-        navMenu.classList.remove("active");
+        nav.classList.remove("active");
 
-        const icon =
-            menuToggle.querySelector("i");
+        const icon = menuToggle.querySelector("i");
 
         icon.classList.remove("fa-xmark");
-
         icon.classList.add("fa-bars");
 
     });
@@ -86,92 +49,207 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
 });
 
 
+/* ================= HEADER ================= */
 
-/* =========================
-   WHATSAPP MODAL
-========================= */
-
-const whatsappModal =
-    document.getElementById("whatsappModal");
+const header = document.getElementById("header");
 
 
-function openWhatsappModal() {
+window.addEventListener("scroll", () => {
 
-    whatsappModal.classList.add("active");
+    if (window.scrollY > 50) {
 
-    document.body.style.overflow = "hidden";
+        header.classList.add("scrolled");
 
-}
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
 
 
-function closeWhatsappModal() {
+/* ================= FILTROS ================= */
 
-    whatsappModal.classList.remove("active");
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const portfolioItems =
+    document.querySelectorAll(".portfolio-item");
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        /* Quitar active */
+
+        filterButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+
+        /* Activar botón */
+
+        button.classList.add("active");
+
+
+        const filter =
+            button.getAttribute("data-filter");
+
+
+        portfolioItems.forEach(item => {
+
+            const category =
+                item.getAttribute("data-category");
+
+
+            if (
+                filter === "all" ||
+                category === filter
+            ) {
+
+                item.style.display = "block";
+
+                setTimeout(() => {
+
+                    item.style.opacity = "1";
+                    item.style.transform = "translateY(0)";
+
+                }, 50);
+
+            } else {
+
+                item.style.opacity = "0";
+                item.style.transform = "translateY(15px)";
+
+                setTimeout(() => {
+
+                    item.style.display = "none";
+
+                }, 250);
+
+            }
+
+        });
+
+    });
+
+});
+
+
+/* ================= GALERÍA / MODAL ================= */
+
+const modal =
+    document.getElementById("imageModal");
+
+const modalImage =
+    document.getElementById("modalImage");
+
+const modalCaption =
+    document.getElementById("modalCaption");
+
+const modalClose =
+    document.getElementById("modalClose");
+
+
+const viewButtons =
+    document.querySelectorAll(".view-image");
+
+
+viewButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const image =
+            button.getAttribute("data-image");
+
+        const title =
+            button.getAttribute("data-title");
+
+
+        modalImage.src = image;
+
+        modalImage.alt = title;
+
+        modalCaption.textContent = title;
+
+
+        modal.classList.add("active");
+
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+});
+
+
+/* CERRAR MODAL */
+
+function closeModal() {
+
+    modal.classList.remove("active");
 
     document.body.style.overflow = "";
 
 }
 
 
-function openWhatsApp(service) {
-
-    const message =
-        `Hola, Gato Barato 🐱\n\n` +
-        `Me interesa: ${service}.\n\n` +
-        `¿Podrían darme información?`;
-
-    const url =
-        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-
-    window.open(url, "_blank");
-
-    closeWhatsappModal();
-
-}
+modalClose.addEventListener(
+    "click",
+    closeModal
+);
 
 
-/* Cerrar haciendo clic fuera */
+/* CERRAR AL HACER CLICK FUERA */
 
-whatsappModal.addEventListener("click", (event) => {
+modal.addEventListener("click", event => {
 
-    if (event.target === whatsappModal) {
+    if (event.target === modal) {
 
-        closeWhatsappModal();
+        closeModal();
 
     }
 
 });
 
 
-/* ESC para cerrar */
+/* CERRAR CON ESC */
 
-document.addEventListener("keydown", (event) => {
+document.addEventListener("keydown", event => {
 
     if (event.key === "Escape") {
 
-        closeWhatsappModal();
+        closeModal();
 
     }
 
 });
 
 
+/* ================= AÑO AUTOMÁTICO ================= */
 
-/* =========================
-   ANIMACIONES AL HACER SCROLL
-========================= */
+const year =
+    document.getElementById("year");
+
+year.textContent =
+    new Date().getFullYear();
+
+
+/* ================= ANIMACIONES ================= */
 
 const observer =
     new IntersectionObserver(
-        (entries) => {
+        entries => {
 
             entries.forEach(entry => {
 
                 if (entry.isIntersecting) {
 
                     entry.target.classList.add("show");
-
-                    observer.unobserve(entry.target);
 
                 }
 
@@ -186,133 +264,28 @@ const observer =
 
 document
     .querySelectorAll(
-        ".service-card, .stat, .promo-card, .about-content, .problem-content"
+        ".service-card, .portfolio-item, .contact-card"
     )
     .forEach(element => {
 
-        element.style.opacity = "0";
-
-        element.style.transform = "translateY(30px)";
-
-        element.style.transition =
-            "opacity .7s ease, transform .7s ease";
+        element.classList.add("animate-on-scroll");
 
         observer.observe(element);
 
     });
 
 
-/* Clase show */
-
-const animationStyle =
-    document.createElement("style");
-
-animationStyle.innerHTML = `
-
-    .service-card.show,
-    .stat.show,
-    .promo-card.show,
-    .about-content.show,
-    .problem-content.show {
-
-        opacity: 1 !important;
-
-        transform: translateY(0) !important;
-
-    }
-
-`;
-
-document.head.appendChild(animationStyle);
-
-
-
-/* =========================
-   PARALLAX DEL LOGO
-========================= */
-
-const heroLogo =
-    document.querySelector(".hero-logo");
-
-
-document.addEventListener("mousemove", (event) => {
-
-    if (!heroLogo) return;
-
-    const x =
-        (window.innerWidth / 2 - event.clientX) / 50;
-
-    const y =
-        (window.innerHeight / 2 - event.clientY) / 50;
-
-    heroLogo.style.transform =
-        `translate(${x}px, ${y}px)`;
-
-});
-
-
-/* =========================
-   EFECTO RIPPLE EN BOTONES
-========================= */
-
-document.querySelectorAll(".btn").forEach(button => {
-
-    button.addEventListener("click", function(event) {
-
-        const ripple =
-            document.createElement("span");
-
-        ripple.classList.add("ripple");
-
-        const rect =
-            this.getBoundingClientRect();
-
-        ripple.style.left =
-            `${event.clientX - rect.left}px`;
-
-        ripple.style.top =
-            `${event.clientY - rect.top}px`;
-
-        this.appendChild(ripple);
-
-        setTimeout(() => {
-
-            ripple.remove();
-
-        }, 600);
-
-    });
-
-});
-
-
-/* =========================
-   EFECTO HOVER SERVICIOS
-========================= */
+/* ================= MENSAJE DE ERROR DE IMAGEN ================= */
 
 document
-    .querySelectorAll(".service-card")
-    .forEach(card => {
+    .querySelectorAll("img")
+    .forEach(image => {
 
-        card.addEventListener("mousemove", event => {
+        image.addEventListener("error", () => {
 
-            const rect =
-                card.getBoundingClientRect();
-
-            const x =
-                event.clientX - rect.left;
-
-            const y =
-                event.clientY - rect.top;
-
-            card.style.setProperty(
-                "--mouse-x",
-                `${x}px`
-            );
-
-            card.style.setProperty(
-                "--mouse-y",
-                `${y}px`
+            console.warn(
+                "No se encontró la imagen:",
+                image.src
             );
 
         });
