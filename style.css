@@ -1,20 +1,10 @@
 /* =========================================================
    GATO BARATO
    STYLE.CSS
-<<<<<<< HEAD
    ========================================================= */
 
 
 /* ================= VARIABLES ================= */
-=======
-   Diseño moderno / oscuro / amarillo
-========================================================= */
-
-
-/* =========================================================
-   VARIABLES
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 :root {
 
@@ -26,12 +16,6 @@
 
     --light: #f8fafc;
     --white: #ffffff;
-<<<<<<< HEAD
-=======
-
-    --gray: #aaaaaa;
-    --gray-light: #dddddd;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     --gray: #64748b;
     --gray-light: #e2e8f0;
@@ -41,7 +25,6 @@
     --radius: 18px;
 
     --shadow:
-<<<<<<< HEAD
         0 15px 40px rgba(15, 23, 42, 0.10);
 
     --transition:
@@ -51,15 +34,6 @@
 
 
 /* ================= RESET ================= */
-=======
-        0 20px 60px rgba(0, 0, 0, .35);
-}
-
-
-/* =========================================================
-   RESET
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 * {
     margin: 0;
@@ -113,143 +87,11 @@ button {
     width: min(1150px, 92%);
 
     margin: auto;
-<<<<<<< HEAD
-=======
-}
-
-
-/* =========================================================
-   LOADER
-========================================================= */
-
-#loader {
-
-    position: fixed;
-
-    inset: 0;
-
-    z-index: 9999;
-
-    background: var(--black);
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    transition: .6s ease;
-}
-
-#loader.hide {
-
-    opacity: 0;
-
-    visibility: hidden;
-}
-
-
-/* LOGO CIRCULAR DEL LOADER */
-
-.loader-logo {
-
-    width: 130px;
-
-    height: 130px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    display: block;
-
-    border: 4px solid var(--yellow);
-
-    background: #111;
-
-    box-shadow:
-        0 0 0 8px rgba(255, 210, 28, .08),
-        0 0 35px rgba(255, 210, 28, .25),
-        0 15px 30px rgba(0, 0, 0, .5);
-
-    animation: loaderPulse 1.5s infinite;
-}
-
-.loader-text {
-
-    margin-top: 15px;
-
-    font-size: 24px;
-
-    font-weight: 800;
-
-    color: var(--yellow);
-}
-
-.loader-bar {
-
-    width: 180px;
-
-    height: 4px;
-
-    background: #222;
-
-    border-radius: 10px;
-
-    margin-top: 20px;
-
-    overflow: hidden;
-}
-
-.loader-bar span {
-
-    display: block;
-
-    width: 40%;
-
-    height: 100%;
-
-    background: var(--yellow);
-
-    animation: loaderBar 1.3s infinite;
-}
-
-@keyframes loaderPulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.08);
-    }
-
-}
-
-@keyframes loaderBar {
-
-    from {
-        transform: translateX(-150%);
-    }
-
-    to {
-        transform: translateX(450%);
-    }
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 }
 
 
-<<<<<<< HEAD
 /* ================= HEADER ================= */
-=======
-/* =========================================================
-   NAVBAR
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .header {
 
@@ -262,12 +104,8 @@ button {
 
     z-index: 1000;
 
-<<<<<<< HEAD
     background:
         rgba(255, 255, 255, 0.95);
-=======
-    background: rgba(8, 8, 8, .85);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     backdrop-filter: blur(10px);
 
@@ -276,10 +114,6 @@ button {
 
     transition: var(--transition);
 
-<<<<<<< HEAD
-=======
-    border-bottom: 1px solid rgba(255, 255, 255, .05);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 }
 
 
@@ -304,13 +138,7 @@ button {
 }
 
 
-<<<<<<< HEAD
 /* LOGO */
-=======
-/* =========================================================
-   LOGO DEL NAVBAR
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .logo {
 
@@ -332,37 +160,10 @@ button {
     width: 48px;
     height: 48px;
 
-<<<<<<< HEAD
     object-fit: contain;
 
     border-radius: 50%;
 
-=======
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    display: block;
-
-    border: 2px solid var(--yellow);
-
-    background: #111;
-
-    box-shadow:
-        0 0 0 3px rgba(255, 210, 28, .12),
-        0 5px 15px rgba(0, 0, 0, .4);
-
-    transition: all .3s ease;
-}
-
-.logo:hover .logo-img {
-
-    transform: rotate(-5deg) scale(1.08);
-
-    box-shadow:
-        0 0 0 5px rgba(255, 210, 28, .15),
-        0 8px 20px rgba(255, 210, 28, .25);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 }
 
 
@@ -375,32 +176,7 @@ button {
 
 /* NAV */
 
-<<<<<<< HEAD
 .nav {
-=======
-    color: var(--yellow);
-
-    font-weight: 900;
-}
-
-.logo-text span {
-
-    font-size: 12px;
-
-    letter-spacing: 2px;
-
-    color: white;
-
-    font-weight: 700;
-}
-
-
-/* =========================================================
-   NAV MENU
-========================================================= */
-
-.nav-menu {
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     display: flex;
 
@@ -447,29 +223,10 @@ button {
 
     width: 100%;
 
-<<<<<<< HEAD
-=======
-    padding: 11px 17px;
-
-    border-radius: 30px;
-
-    font-weight: 800 !important;
-
-    box-shadow:
-        0 5px 20px rgba(255, 210, 28, .25);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 }
 
 
-<<<<<<< HEAD
 /* MENU MOBILE */
-=======
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 25px rgba(255, 210, 28, .4);
-}
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .menu-toggle {
 
@@ -488,13 +245,7 @@ button {
 }
 
 
-<<<<<<< HEAD
 /* ================= HERO ================= */
-=======
-/* =========================================================
-   HERO
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .hero {
 
@@ -562,21 +313,11 @@ button {
 
     gap: 8px;
 
-<<<<<<< HEAD
     padding: 8px 15px;
-=======
-    border: 1px solid rgba(255, 210, 28, .3);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     background: #fff;
 
-<<<<<<< HEAD
     border: 1px solid #fed7aa;
-=======
-    background: rgba(255, 210, 28, .05);
-
-    padding: 8px 14px;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     border-radius: 30px;
 
@@ -586,34 +327,7 @@ button {
 
     font-weight: 700;
 
-<<<<<<< HEAD
     margin-bottom: 20px;
-=======
-.pulse {
-
-    width: 8px;
-
-    height: 8px;
-
-    background: var(--yellow);
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 0 0 6px rgba(255, 210, 28, .1);
-
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-
-    50% {
-
-        box-shadow:
-            0 0 0 10px rgba(255, 210, 28, 0);
-
-    }
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 }
 
@@ -662,178 +376,10 @@ button {
 
     gap: 15px;
 
-<<<<<<< HEAD
 }
 
 
 /* HERO LOGO */
-=======
-    margin-top: 35px;
-
-    flex-wrap: wrap;
-}
-
-
-/* =========================================================
-   BOTONES
-========================================================= */
-
-.btn {
-
-    border: 0;
-
-    cursor: pointer;
-
-    padding: 15px 22px;
-
-    border-radius: 12px;
-
-    font-size: 13px;
-
-    font-weight: 800;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    transition: .3s;
-
-    position: relative;
-
-    overflow: hidden;
-}
-
-.btn:hover {
-
-    transform: translateY(-4px);
-}
-
-.btn-primary {
-
-    background: var(--yellow);
-
-    color: #111;
-
-    box-shadow:
-        0 10px 30px rgba(255, 210, 28, .2);
-}
-
-.btn-primary:hover {
-
-    box-shadow:
-        0 15px 35px rgba(255, 210, 28, .35);
-}
-
-.btn-whatsapp {
-
-    background: var(--green);
-
-    color: white;
-
-    box-shadow:
-        0 10px 30px rgba(37, 211, 102, .2);
-}
-
-.btn-whatsapp:hover {
-
-    box-shadow:
-        0 15px 35px rgba(37, 211, 102, .35);
-}
-
-.btn-outline {
-
-    border: 1px solid rgba(255, 255, 255, .2);
-
-    color: white;
-
-    background: transparent;
-}
-
-.btn-outline:hover {
-
-    border-color: var(--yellow);
-
-    color: var(--yellow);
-}
-
-
-/* =========================================================
-   HERO TRUST
-========================================================= */
-
-.hero-trust {
-
-    display: flex;
-
-    gap: 25px;
-
-    margin-top: 25px;
-
-    flex-wrap: wrap;
-}
-
-.hero-trust div {
-
-    font-size: 11px;
-
-    color: #aaa;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 7px;
-}
-
-.hero-trust i {
-
-    color: var(--yellow);
-}
-
-
-/* =========================================================
-   HERO VISUAL
-========================================================= */
-
-.hero-visual {
-
-    position: relative;
-
-    min-height: 480px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-}
-
-.hero-glow {
-
-    position: absolute;
-
-    width: 350px;
-
-    height: 350px;
-
-    border-radius: 50%;
-
-    background: var(--yellow);
-
-    opacity: .12;
-
-    filter: blur(50px);
-}
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
-
-
-/* =========================================================
-   LOGO PRINCIPAL CIRCULAR
-========================================================= */
 
 .hero-logo {
 
@@ -875,110 +421,37 @@ button {
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
 
     border-radius: 50%;
 
-    display: block;
-
-    border-radius: 50%;
-
-<<<<<<< HEAD
-=======
-    z-index: 2;
-
-    border: 5px solid var(--yellow);
-
-    background: #111;
-
-    box-shadow:
-
-        0 0 0 10px rgba(255, 210, 28, .08),
-
-        0 0 50px rgba(255, 210, 28, .25),
-
-        0 25px 50px rgba(0, 0, 0, .5);
-
-    animation: logoFloat 4s ease-in-out infinite;
-
-    transition: transform .3s ease;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 }
 
 
 @keyframes floating {
 
-    0%,
-    100% {
-
+    0%,100% {
         transform: translateY(0);
-
     }
 
     50% {
-
         transform: translateY(-15px);
-
     }
 
 }
 
-<<<<<<< HEAD
-=======
-
-/* =========================================================
-   FLOATING CARDS
-========================================================= */
-
-.floating-card {
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 /* ================= BUTTONS ================= */
 
 .btn {
 
-<<<<<<< HEAD
     display: inline-flex;
-=======
-    background: rgba(25, 25, 25, .9);
-
-    backdrop-filter: blur(15px);
-
-    border: 1px solid rgba(255, 255, 255, .08);
-
-    border-radius: 15px;
-
-    padding: 12px 15px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    box-shadow: var(--shadow);
-
-    animation: cardFloat 4s ease-in-out infinite;
-}
-
-.floating-card i {
-
-    width: 35px;
-
-    height: 35px;
-
-    display: flex;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     align-items: center;
 
     justify-content: center;
 
-<<<<<<< HEAD
     gap: 10px;
-=======
-    background: rgba(255, 210, 28, .1);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     padding: 14px 23px;
 
@@ -988,74 +461,15 @@ button {
 
     transition: var(--transition);
 
-<<<<<<< HEAD
     border: 2px solid transparent;
-=======
-    flex-direction: column;
-}
-
-.floating-card strong {
-
-    font-size: 11px;
-}
-
-.floating-card span {
-
-    font-size: 9px;
-
-    color: #999;
-
-    margin-top: 3px;
-}
-
-.card-1 {
-
-    left: 0;
-
-    top: 90px;
-}
-
-.card-2 {
-
-    right: 0;
-
-    top: 40px;
-
-    animation-delay: 1s;
-}
-
-.card-3 {
-
-    right: 15px;
-
-    bottom: 90px;
-
-    animation-delay: 2s;
-}
-
-@keyframes cardFloat {
-
-    50% {
-
-        transform: translateY(-8px);
-
-    }
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 }
 
 
-<<<<<<< HEAD
 .btn-primary {
-=======
-/* =========================================================
-   STATS
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     background: var(--primary);
 
-<<<<<<< HEAD
     color: white;
 
 }
@@ -1090,65 +504,6 @@ button {
 
 
 /* ================= SECTIONS ================= */
-=======
-    border-top: 1px solid rgba(255, 255, 255, .05);
-
-    border-bottom: 1px solid rgba(255, 255, 255, .05);
-
-    background: #0d0d0d;
-}
-
-.stats-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.stat {
-
-    padding: 28px 15px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    border-right: 1px solid rgba(255, 255, 255, .05);
-}
-
-.stat:last-child {
-
-    border: 0;
-}
-
-.stat i {
-
-    color: var(--yellow);
-
-    font-size: 22px;
-}
-
-.stat strong {
-
-    font-size: 14px;
-}
-
-.stat span {
-
-    color: #777;
-
-    font-size: 10px;
-}
-
-
-/* =========================================================
-   SECCIONES
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .section {
 
@@ -1185,11 +540,7 @@ button {
 }
 
 
-<<<<<<< HEAD
 .section-title h2 {
-=======
-    font-size: clamp(32px, 4vw, 48px);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     font-size:
         clamp(2rem, 4vw, 3rem);
@@ -1201,7 +552,6 @@ button {
 }
 
 
-<<<<<<< HEAD
 .section-title p {
 
     color: var(--gray);
@@ -1210,11 +560,6 @@ button {
 
 
 /* ================= SERVICES ================= */
-=======
-/* =========================================================
-   SERVICIOS
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .services {
 
@@ -1227,14 +572,10 @@ button {
 
     display: grid;
 
-<<<<<<< HEAD
     grid-template-columns:
         repeat(3, 1fr);
 
     gap: 22px;
-=======
-    grid-template-columns: repeat(4, 1fr);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 }
 
@@ -1243,13 +584,7 @@ button {
 
     background: white;
 
-<<<<<<< HEAD
     padding: 30px;
-=======
-    background: #141414;
-
-    border: 1px solid rgba(255, 255, 255, .06);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     border-radius: var(--radius);
 
@@ -1261,54 +596,13 @@ button {
 
 }
 
-<<<<<<< HEAD
-=======
-.service-card::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 180px;
-
-    height: 180px;
-
-    border-radius: 50%;
-
-    background: var(--yellow);
-
-    opacity: 0;
-
-    filter: blur(70px);
-
-    top: var(--mouse-y);
-
-    left: var(--mouse-x);
-
-    pointer-events: none;
-
-    transition: opacity .3s;
-}
-
-.service-card:hover::before {
-
-    opacity: .08;
-}
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .service-card:hover {
 
     transform: translateY(-8px);
 
-<<<<<<< HEAD
     border-color: #fed7aa;
 
-=======
-    border-color: rgba(255, 210, 28, .3);
-
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, .3);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 }
 
 
@@ -1323,11 +617,7 @@ button {
 
     justify-content: center;
 
-<<<<<<< HEAD
     border-radius: 15px;
-=======
-    background: rgba(255, 210, 28, .1);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     background: #fff7ed;
 
@@ -1353,51 +643,8 @@ button {
 
     color: var(--gray);
 
-<<<<<<< HEAD
     font-size: 0.95rem;
 
-=======
-    line-height: 1.7;
-
-    color: #888;
-
-    min-height: 80px;
-}
-
-.service-card button {
-
-    border: 0;
-
-    background: transparent;
-
-    color: var(--yellow);
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    cursor: pointer;
-
-    display: flex;
-
-    gap: 8px;
-
-    align-items: center;
-
-    margin-top: 18px;
-
-    transition: .3s;
-}
-
-.service-card button:hover {
-
-    gap: 13px;
-}
-
-.featured {
-
-    border-color: rgba(255, 210, 28, .25);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 }
 
 
@@ -1410,370 +657,22 @@ button {
 }
 
 
-<<<<<<< HEAD
 .portfolio-filters {
-=======
-/* =========================================================
-   PROBLEM SECTION
-========================================================= */
-
-.problem-section {
-
-    padding: 100px 0;
-
-    background: #111;
-}
-
-.problem-container {
-
-    display: grid;
-
-    grid-template-columns: .8fr 1.2fr;
-
-    align-items: center;
-
-    gap: 70px;
-}
-
-.problem-image {
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     display: flex;
 
     justify-content: center;
 
-<<<<<<< HEAD
     flex-wrap: wrap;
-=======
-.problem-circle {
-
-    width: 280px;
-
-    height: 280px;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255, 210, 28, .2),
-            rgba(255, 210, 28, .02)
-        );
-
-    border: 1px solid rgba(255, 210, 28, .2);
-
-    color: var(--yellow);
-
-    font-size: 90px;
-
-    animation: gaugeFloat 4s infinite ease-in-out;
-}
-
-@keyframes gaugeFloat {
-
-    50% {
-
-        transform: translateY(-12px);
-
-    }
-
-}
-
-.problem-content > p {
-
-    color: #999;
-
-    line-height: 1.8;
-
-    margin-bottom: 25px;
-}
-
-.problem-content ul {
-
-    list-style: none;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 13px;
-
-    margin-bottom: 30px;
-}
-
-.problem-content li {
-
-    color: #ccc;
-
-    font-size: 12px;
-
-    display: flex;
-
-    gap: 9px;
-
-    align-items: center;
-}
-
-.problem-content li i {
-
-    color: var(--yellow);
-}
-
-
-/* =========================================================
-   PROMOCIONES
-========================================================= */
-
-.promotions {
-
-    background: #0b0b0b;
-}
-
-.promo-card {
-
-    background:
-        linear-gradient(
-            120deg,
-            #191919,
-            #101010
-        );
-
-    border: 1px solid rgba(255, 210, 28, .18);
-
-    border-radius: 25px;
-
-    padding: 50px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 60px;
-
-    overflow: hidden;
-
-    position: relative;
-}
-
-.promo-card::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 300px;
-
-    height: 300px;
-
-    background: var(--yellow);
-
-    opacity: .06;
-
-    border-radius: 50%;
-
-    right: -100px;
-
-    top: -100px;
-}
-
-
-/* =========================================================
-   LOGO CIRCULAR PROMOCIÓN
-========================================================= */
-
-.promo-logo img {
-
-    width: 200px;
-
-    height: 200px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    display: block;
-
-    border: 4px solid var(--yellow);
-
-    background: #111;
-
-    box-shadow:
-
-        0 0 0 8px rgba(255, 210, 28, .08),
-
-        0 15px 30px rgba(0, 0, 0, .4);
-}
-
-.promo-content {
-
-    position: relative;
-
-    z-index: 2;
-}
-
-.promo-content > span {
-
-    font-size: 10px;
-
-    color: var(--yellow);
-
-    letter-spacing: 2px;
-
-    font-weight: 800;
-}
-
-.promo-content h3 {
-
-    font-size: 30px;
-
-    margin: 12px 0;
-}
-
-.promo-content p {
-
-    color: #999;
-
-    margin-bottom: 25px;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about {
-
-    background: #111;
-}
-
-.about-container {
-
-    display: grid;
-
-    grid-template-columns: 1fr .8fr;
-
-    align-items: center;
-
-    gap: 80px;
-}
-
-.about-content > p {
-
-    color: #999;
-
-    line-height: 1.8;
-
-    margin-bottom: 15px;
-}
-
-.about-features {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 15px;
-
-    margin-top: 30px;
-}
-
-.about-features div {
-
-    display: flex;
-
-    align-items: center;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     gap: 10px;
 
     margin-bottom: 40px;
 
-<<<<<<< HEAD
 }
 
 
 .filter-btn {
-=======
-    font-size: 12px;
-}
-
-.about-features i {
-
-    color: var(--yellow);
-}
-
-
-/* =========================================================
-   LOGO CIRCULAR NOSOTROS
-========================================================= */
-
-.about-logo {
-
-    text-align: center;
-}
-
-.about-logo-circle {
-
-    width: 300px;
-
-    height: 300px;
-
-    margin: auto;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: #111;
-
-    border: 3px solid var(--yellow);
-
-    box-shadow:
-
-        0 0 0 10px rgba(255, 210, 28, .08),
-
-        0 0 50px rgba(255, 210, 28, .15),
-
-        0 20px 40px rgba(0, 0, 0, .4);
-}
-
-.about-logo-circle img {
-
-    width: 90%;
-
-    height: 90%;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-}
-
-.about-logo h3 {
-
-    margin-top: 30px;
-
-    color: var(--yellow);
-
-    font-size: 17px;
-
-    line-height: 1.5;
-}
-
-
-/* =========================================================
-   CONTACTO
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     border: 1px solid var(--gray-light);
 
@@ -1817,15 +716,6 @@ button {
 
 }
 
-<<<<<<< HEAD
-=======
-
-/* =========================================================
-   LOGO CIRCULAR CONTACTO
-========================================================= */
-
-.contact-logo img {
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 .portfolio-item {
 
@@ -1853,234 +743,16 @@ button {
 
     height: 250px;
 
-<<<<<<< HEAD
     position: relative;
-=======
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    border: 5px solid var(--yellow);
-
-    background: #111;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     overflow: hidden;
 
-<<<<<<< HEAD
     background: #e2e8f0;
-=======
-    margin: auto;
-
-    box-shadow:
-
-        0 0 0 10px rgba(255, 210, 28, .08),
-
-        0 0 45px rgba(255, 210, 28, .2),
-
-        0 20px 40px rgba(0, 0, 0, .5);
-}
-
-.contact-content > p {
-
-    color: #999;
-
-    line-height: 1.8;
-
-    max-width: 550px;
-}
-
-.contact-buttons {
-
-    display: flex;
-
-    gap: 15px;
-
-    margin-top: 30px;
-
-    flex-wrap: wrap;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-
-    background: #050505;
-
-    border-top: 1px solid rgba(255, 255, 255, .05);
-
-    padding: 35px 0;
-}
-
-.footer-container {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    flex-wrap: wrap;
-}
-
-.footer-brand {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-}
-
-
-/* LOGO CIRCULAR FOOTER */
-
-.footer-brand img {
-
-    width: 50px;
-
-    height: 50px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    border: 2px solid var(--yellow);
-
-    background: #111;
-
-    display: block;
-}
-
-.footer-brand div {
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-.footer-brand strong {
-
-    color: var(--yellow);
-
-    font-size: 15px;
-}
-
-.footer-brand span {
-
-    color: #777;
-
-    font-size: 9px;
-
-    margin-top: 5px;
-}
-
-.footer-social a {
-
-    width: 40px;
-
-    height: 40px;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: rgba(37, 211, 102, .1);
-
-    color: var(--green);
-
-    transition: .3s;
-}
-
-.footer-social a:hover {
-
-    transform: translateY(-4px);
-
-    background: var(--green);
-
-    color: white;
-}
-
-.footer-copy {
-
-    color: #555;
-
-    font-size: 9px;
-}
-
-
-/* =========================================================
-   WHATSAPP FLOAT
-========================================================= */
-
-.whatsapp-float {
-
-    position: fixed;
-
-    bottom: 25px;
-
-    right: 25px;
-
-    z-index: 900;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 9px;
-
-    background: var(--green);
-
-    color: white;
-
-    padding: 13px 18px;
-
-    border-radius: 40px;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    box-shadow:
-        0 10px 30px rgba(37, 211, 102, .3);
-
-    animation: whatsappPulse 2s infinite;
-}
-
-.whatsapp-float i {
-
-    font-size: 19px;
-}
-
-@keyframes whatsappPulse {
-
-    50% {
-
-        box-shadow:
-            0 10px 35px rgba(37, 211, 102, .5);
-
-    }
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
 }
 
 
-<<<<<<< HEAD
 .portfolio-image img {
-=======
-/* =========================================================
-   MODAL WHATSAPP
-========================================================= */
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     width: 100%;
     height: 100%;
@@ -2107,16 +779,8 @@ footer {
 
     inset: 0;
 
-<<<<<<< HEAD
     background:
         rgba(0,0,0,0.55);
-=======
-    z-index: 3000;
-
-    background: rgba(0, 0, 0, .75);
-
-    backdrop-filter: blur(8px);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     display: flex;
 
@@ -2139,20 +803,12 @@ footer {
 }
 
 
-<<<<<<< HEAD
 .view-image {
-=======
-    width: min(450px, 100%);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     width: 55px;
     height: 55px;
 
-<<<<<<< HEAD
     border-radius: 50%;
-=======
-    border: 1px solid rgba(255, 255, 255, .08);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     border: none;
 
@@ -2758,7 +1414,6 @@ footer {
 
     cursor: pointer;
 
-<<<<<<< HEAD
 }
 
 
@@ -2767,169 +1422,6 @@ footer {
 @media (max-width: 900px) {
 
     .hero-content {
-=======
-    font-size: 16px;
-}
-
-
-/* LOGO CIRCULAR MODAL */
-
-.modal-logo {
-
-    width: 100px;
-
-    height: 100px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    border: 3px solid var(--yellow);
-
-    background: #111;
-
-    display: block;
-
-    margin: 0 auto 15px;
-
-    box-shadow:
-        0 0 25px rgba(255, 210, 28, .2);
-}
-
-.whatsapp-modal h3 {
-
-    font-size: 22px;
-
-    margin-bottom: 8px;
-}
-
-.whatsapp-modal > p {
-
-    color: #777;
-
-    font-size: 12px;
-
-    line-height: 1.6;
-
-    margin-bottom: 25px;
-}
-
-.modal-options {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 10px;
-}
-
-.modal-options button {
-
-    border: 1px solid rgba(255, 255, 255, .07);
-
-    background: #202020;
-
-    color: #ddd;
-
-    padding: 15px 10px;
-
-    border-radius: 12px;
-
-    cursor: pointer;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    gap: 8px;
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    transition: .3s;
-}
-
-.modal-options button i {
-
-    color: var(--yellow);
-
-    font-size: 19px;
-}
-
-.modal-options button:hover {
-
-    border-color: var(--yellow);
-
-    transform: translateY(-3px);
-
-    background: #252525;
-}
-
-
-/* =========================================================
-   RIPPLE
-========================================================= */
-
-.ripple {
-
-    position: absolute;
-
-    width: 10px;
-
-    height: 10px;
-
-    background: rgba(255, 255, 255, .5);
-
-    border-radius: 50%;
-
-    transform: translate(-50%, -50%);
-
-    animation: rippleEffect .6s linear;
-
-    pointer-events: none;
-}
-
-@keyframes rippleEffect {
-
-    from {
-
-        width: 10px;
-
-        height: 10px;
-
-        opacity: .7;
-
-    }
-
-    to {
-
-        width: 400px;
-
-        height: 400px;
-
-        opacity: 0;
-
-    }
-
-}
-
-
-/* =========================================================
-   RESPONSIVE - TABLET
-========================================================= */
-
-@media(max-width: 1000px) {
-
-    .services-grid {
-
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-container {
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
         grid-template-columns: 1fr;
 
@@ -2992,15 +1484,7 @@ footer {
 }
 
 
-<<<<<<< HEAD
 @media (max-width: 700px) {
-=======
-/* =========================================================
-   RESPONSIVE - MOBILE
-========================================================= */
-
-@media(max-width: 768px) {
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     .nav {
 
@@ -3013,13 +1497,7 @@ footer {
 
         background: white;
 
-<<<<<<< HEAD
         display: none;
-=======
-        border-top: 1px solid rgba(255, 255, 255, .05);
-
-        display: flex;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
         flex-direction: column;
 
@@ -3055,10 +1533,6 @@ footer {
 
         padding-bottom: 70px;
 
-<<<<<<< HEAD
-=======
-        border-bottom: 1px solid rgba(255, 255, 255, .05);
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
     }
 
     .hero h1 {
@@ -3092,15 +1566,7 @@ footer {
 }
 
 
-<<<<<<< HEAD
 @media (max-width: 450px) {
-=======
-/* =========================================================
-   RESPONSIVE - CELULAR
-========================================================= */
-
-@media(max-width: 550px) {
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
 
     .logo-circle {
 
@@ -3124,113 +1590,7 @@ footer {
     .portfolio-image {
 
         height: 230px;
-<<<<<<< HEAD
 
-=======
-
-        border-width: 4px;
-    }
-
-    .floating-card {
-
-        transform: scale(.8);
-    }
-
-    .card-1 {
-
-        left: -10px;
-    }
-
-    .card-2 {
-
-        right: -10px;
-    }
-
-    .card-3 {
-
-        right: -15px;
-
-        bottom: 40px;
-    }
-
-    .services-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-    .problem-content ul {
-
-        grid-template-columns: 1fr;
-    }
-
-    .problem-circle {
-
-        width: 220px;
-
-        height: 220px;
-
-        font-size: 70px;
-    }
-
-    .promo-logo img {
-
-        width: 150px;
-
-        height: 150px;
-
-        border-width: 3px;
-    }
-
-    .about-logo-circle {
-
-        width: 230px;
-
-        height: 230px;
-    }
-
-    .about-logo-circle img {
-
-        width: 90%;
-
-        height: 90%;
-    }
-
-    .contact-logo img {
-
-        width: 190px;
-
-        height: 190px;
-
-        border-width: 4px;
-    }
-
-    .whatsapp-float span {
-
-        display: none;
-    }
-
-    .whatsapp-float {
-
-        width: 55px;
-
-        height: 55px;
-
-        padding: 0;
-
-        justify-content: center;
-    }
-
-    .modal-options {
-
-        grid-template-columns: 1fr;
->>>>>>> 6754f4a6c6a7aee9bf9896a600a73a6b034a4c45
-    }
-
-    .modal-logo {
-
-        width: 90px;
-
-        height: 90px;
     }
 
 }
