@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Gato Barato | Soporte y Soluciones Tecnológicas</title>
-    <meta name="description" content="Gato Barato - Soporte técnico, mantenimiento de computadoras, instalación de cámaras, impresoras y soluciones tecnológicas.">
+    <meta name="description"
+          content="Gato Barato - Soporte técnico, mantenimiento de computadoras, instalación de cámaras, impresoras y soluciones tecnológicas.">
     <link rel="stylesheet" href="style.css">
-    <!-- Iconos -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="img/gatobarato.png" rel="icon">
@@ -17,134 +19,276 @@
     <meta property="og:url" content="https://dcreate.github.io/GatoBarato/">
     <meta name="twitter:card" content="summary_large_image">      
 </head>
+
+
 <body>
-    <!-- ================= HEADER ================= -->
-    <header class="header" id="header">
-        <div class="container nav-container">
-            <a href="#inicio" class="logo">
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-logo">
                 <img src="img/logo.png" alt="Gato Barato">
-                <span>Gato<span>Barato</span></span>
+            </div>
+
+            <div class="loader-text">
+                Gato Barato
+            </div>
+
+            <div class="loader-subtext">
+                Preparando soluciones...
+            </div>
+
+            <div class="loader-bar">
+                <span></span>
+            </div>
+
+            <div class="loader-percent">
+                <span id="loaderPercent">0</span>%
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="#inicio" class="logo">
+
+                <img src="img/logo.png"
+                     alt="Gato Barato">
+
+                <span>
+                    Gato<span>Barato</span>
+                </span>
+
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Abrir menú">
+
                 <i class="fas fa-bars"></i>
+
             </button>
 
+
             <nav class="nav" id="nav">
+
                 <a href="#inicio">Inicio</a>
+
                 <a href="#servicios">Servicios</a>
+
                 <a href="#trabajos">Trabajos</a>
+
                 <a href="#nosotros">Nosotros</a>
+
                 <a href="#contacto">Contacto</a>
+
             </nav>
+
         </div>
+
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
     <section class="hero" id="inicio">
+
         <div class="hero-background"></div>
+
+
         <div class="container hero-content">
 
             <div class="hero-text">
 
                 <span class="hero-tag">
+
                     <i class="fas fa-cat"></i>
+
                     Soluciones tecnológicas
+
                 </span>
 
+
                 <h1>
+
                     Soluciones rápidas
-                    <span>sin arañar tu bolsillo.</span>
+
+                    <span>
+                        sin arañar tu bolsillo.
+                    </span>
+
                 </h1>
 
+
                 <p>
-                    Soporte técnico, mantenimiento, instalación y soluciones
-                    tecnológicas para tu hogar o negocio.
+
+                    Soporte técnico, mantenimiento, instalación
+                    y soluciones tecnológicas para tu hogar o negocio.
+
                 </p>
 
+
                 <div class="hero-buttons">
-                    <a href="#trabajos" class="btn btn-primary">
+
+                    <a href="#trabajos"
+                       class="btn btn-primary">
+
                         <i class="fas fa-images"></i>
+
                         Ver mis trabajos
+
                     </a>
+
+
                     <a href="https://wa.me/527858306688"
-                    class="btn btn-whatsapp"
-                    target="_blank">
+                       class="btn btn-whatsapp"
+                       target="_blank">
+
                         <i class="fab fa-whatsapp"></i>
+
                         WhatsApp
+
                     </a>
+
                 </div>
+
             </div>
 
+
             <div class="hero-logo">
+
                 <div class="logo-circle">
-                    <!--LOGO -->
-                    <img src="img/logo.png" alt="Logo Gato Barato">
+
+                    <img src="img/logo.png"
+                         alt="Logo Gato Barato">
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
 
-    <!-- ================= SERVICIOS ================= -->
+    <!-- =====================================================
+         SERVICIOS
+    ====================================================== -->
 
-    <section class="section services" id="servicios">
+    <section class="section services"
+             id="servicios">
+
         <div class="container">
+
             <div class="section-title">
-                <span>¿Qué hacemos?</span>
-                <h2>Nuestros servicios</h2>
+
+                <span>
+                    ¿Qué hacemos?
+                </span>
+
+                <h2>
+                    Nuestros servicios
+                </h2>
+
                 <p>
-                    Soluciones para mantener tus equipos funcionando
-                    correctamente.
+                    Soluciones para mantener tus equipos
+                    funcionando correctamente.
                 </p>
+
             </div>
 
+
             <div class="services-grid">
+
+
                 <article class="service-card">
+
                     <div class="service-icon">
+
                         <i class="fas fa-laptop"></i>
+
                     </div>
-                    <h3>Mantenimiento de computadoras</h3>
+
+                    <h3>
+                        Mantenimiento de computadoras
+                    </h3>
+
                     <p>
                         Limpieza interna, cambio de pasta térmica,
                         optimización y mantenimiento preventivo.
                     </p>
+
                 </article>
 
+
                 <article class="service-card">
+
                     <div class="service-icon">
+
                         <i class="fas fa-print"></i>
+
                     </div>
-                    <h3>Impresoras</h3>
+
+                    <h3>
+                        Impresoras
+                    </h3>
+
                     <p>
                         Mantenimiento, configuración e instalación
                         de impresoras.
                     </p>
+
                 </article>
+
 
                 <article class="service-card">
 
                     <div class="service-icon">
+
                         <i class="fas fa-video"></i>
+
                     </div>
 
-                    <h3>Cámaras de seguridad</h3>
+                    <h3>
+                        Cámaras de seguridad
+                    </h3>
 
                     <p>
                         Instalación y configuración de sistemas
                         de videovigilancia.
                     </p>
+
                 </article>
 
 
                 <article class="service-card">
+
                     <div class="service-icon">
-                        <i class="fas fa-windows"></i>
+
+                        <i class="fas fa-gears"></i>
+
                     </div>
 
-                    <h3>Sistemas y programas</h3>
+                    <h3>
+                        Sistemas y programas
+                    </h3>
 
                     <p>
                         Instalación de sistemas operativos,
@@ -157,10 +301,14 @@
                 <article class="service-card">
 
                     <div class="service-icon">
+
                         <i class="fas fa-hard-drive"></i>
+
                     </div>
 
-                    <h3>Recuperación de información</h3>
+                    <h3>
+                        Recuperación de información
+                    </h3>
 
                     <p>
                         Diagnóstico y recuperación de información
@@ -171,31 +319,54 @@
 
 
                 <article class="service-card">
+
                     <div class="service-icon">
+
                         <i class="fas fa-memory"></i>
+
                     </div>
 
-                    <h3>Actualización de equipos</h3>
+                    <h3>
+                        Actualización de equipos
+                    </h3>
+
                     <p>
                         Instalación de SSD, memoria RAM y mejoras
                         para aumentar el rendimiento.
                     </p>
+
                 </article>
+
             </div>
+
         </div>
+
     </section>
 
 
-    <!-- ================= TRABAJOS ================= -->
+    <!-- =====================================================
+         PORTAFOLIO
+    ====================================================== -->
 
-    <section class="section portfolio" id="trabajos">
+    <section class="section portfolio"
+             id="trabajos">
+
         <div class="container">
+
             <div class="section-title">
-                <span>Portafolio</span>
-                <h2>Algunos de nuestros trabajos</h2>
+
+                <span>
+                    Portafolio
+                </span>
+
+                <h2>
+                    Algunos de nuestros trabajos
+                </h2>
+
                 <p>
                     Una muestra de los proyectos y servicios realizados.
                 </p>
+
             </div>
 
 
@@ -203,24 +374,43 @@
 
             <div class="portfolio-filters">
 
-                <button class="filter-btn active" data-filter="all">
+                <button class="filter-btn active"
+                        data-filter="all">
+
                     Todos
+
                 </button>
 
-                <button class="filter-btn" data-filter="computadoras">
+
+                <button class="filter-btn"
+                        data-filter="computadoras">
+
                     Computadoras
+
                 </button>
 
-                <button class="filter-btn" data-filter="camaras">
+
+                <button class="filter-btn"
+                        data-filter="camaras">
+
                     Cámaras
+
                 </button>
 
-                <button class="filter-btn" data-filter="impresoras">
+
+                <button class="filter-btn"
+                        data-filter="impresoras">
+
                     Impresoras
+
                 </button>
 
-                <button class="filter-btn" data-filter="diseño">
+
+                <button class="filter-btn"
+                        data-filter="diseño">
+
                     Diseños
+
                 </button>
 
             </div>
@@ -231,16 +421,14 @@
             <div class="portfolio-grid">
 
 
-                <!-- TRABAJO 1 -->
-
                 <article class="portfolio-item"
-                        data-category="computadoras">
+                         data-category="computadoras">
 
                     <div class="portfolio-image">
 
                         <img src="img/trabajo1.jpg"
-                            alt="Limpieza y mantenimiento a ventilador/disipador de procesador en laptop"
-                            loading="lazy">
+                             alt="Limpieza y mantenimiento a ventilador/disipador de procesador en laptopa"
+                             loading="lazy">
 
                         <div class="portfolio-overlay">
 
@@ -258,25 +446,27 @@
 
                     <div class="portfolio-info">
 
-                        <span>Computadoras</span>
+                        <span>
+                            Computadoras
+                        </span>
 
-                        <h3>Mantenimiento de equipo</h3>
+                        <h3>
+                            Limpieza y mantenimiento a ventilador/disipador de procesador en laptop
+                        </h3>
 
                     </div>
 
                 </article>
 
 
-                <!-- TRABAJO 2 -->
-
                 <article class="portfolio-item"
-                        data-category="camaras">
+                         data-category="camaras">
 
                     <div class="portfolio-image">
 
                         <img src="img/trabajo2.jpg"
-                            alt="Instalación de cámara"
-                            loading="lazy">
+                             alt="Instalación de cámara"
+                             loading="lazy">
 
                         <div class="portfolio-overlay">
 
@@ -294,25 +484,27 @@
 
                     <div class="portfolio-info">
 
-                        <span>Cámaras</span>
+                        <span>
+                            Cámaras
+                        </span>
 
-                        <h3>Instalación de cámaras IP hikvision</h3>
+                        <h3>
+                            Instalación de cámaras IP hikvision
+                        </h3>
 
                     </div>
 
                 </article>
 
 
-                <!-- TRABAJO 3 -->
-
                 <article class="portfolio-item"
-                        data-category="impresoras">
+                         data-category="impresoras">
 
                     <div class="portfolio-image">
 
                         <img src="img/trabajo3.jpg"
-                            alt="Mantenimiento de impresora"
-                            loading="lazy">
+                             alt="Mantenimiento de impresora"
+                             loading="lazy">
 
                         <div class="portfolio-overlay">
 
@@ -330,28 +522,33 @@
 
                     <div class="portfolio-info">
 
-                        <span>Impresoras</span>
-                        <h3>Limpieza de lector de cabezales Hp Tank</h3>
+                        <span>
+                            Impresoras
+                        </span>
+
+                        <h3>
+                            Limpieza de lector de cabezales Hp Tank
+                        </h3>
+
                     </div>
 
                 </article>
 
-                <!-- TRABAJO 4 -->
 
                 <article class="portfolio-item"
-                        data-category="diseño">
+                         data-category="diseño">
 
                     <div class="portfolio-image">
 
                         <img src="img/trabajo4.jpg"
-                            alt="Diseño Gato Barato"
-                            loading="lazy">
+                             alt="Diseño Gato Barato"
+                             loading="lazy">
 
                         <div class="portfolio-overlay">
 
                             <button class="view-image"
                                     data-image="img/trabajo4.jpg"
-                                    data-title="Diseño Gato Barato">
+                                    data-title="Elaboracion de etiquetas y/o sticker">
 
                                 <i class="fas fa-expand"></i>
 
@@ -363,31 +560,33 @@
 
                     <div class="portfolio-info">
 
-                        <span>Diseño</span>
+                        <span>
+                            Diseño
+                        </span>
 
-                        <h3>Elaboracion de etiquetas y/o sticker</h3>
+                        <h3>
+                            Elaboracion de etiquetas y/o sticker
+                        </h3>
 
                     </div>
 
                 </article>
 
 
-                <!-- TRABAJO 5 -->
-
                 <article class="portfolio-item"
-                        data-category="computadoras">
+                         data-category="computadoras">
 
                     <div class="portfolio-image">
 
                         <img src="img/trabajo5.jpg"
-                            alt="Cambio de disco"
-                            loading="lazy">
+                             alt="Cambio de disc"
+                             loading="lazy">
 
                         <div class="portfolio-overlay">
 
                             <button class="view-image"
                                     data-image="img/trabajo5.jpg"
-                                    data-title="Cambio por unidad solida de almacenamiento">
+                                    data-title="Limpieza y optimización">
 
                                 <i class="fas fa-expand"></i>
 
@@ -399,25 +598,27 @@
 
                     <div class="portfolio-info">
 
-                        <span>Computadoras</span>
+                        <span>
+                            Computadoras
+                        </span>
 
-                        <h3>Cambio de unidad de almacenamiento</h3>
+                        <h3>
+                            Cambio de unidad de almacenamiento a unidad solida
+                        </h3>
 
                     </div>
 
                 </article>
 
 
-                <!-- TRABAJO 6 -->
-
                 <article class="portfolio-item"
-                        data-category="computadoras">
+                         data-category="computadoras">
 
                     <div class="portfolio-image">
 
                         <img src="img/trabajo6.jpg"
-                            alt="Reemplazo de display"
-                            loading="lazy">
+                             alt="Reemplazo de display"
+                             loading="lazy">
 
                         <div class="portfolio-overlay">
 
@@ -435,9 +636,13 @@
 
                     <div class="portfolio-info">
 
-                        <span>Computadoras</span>
+                        <span>
+                            Computadoras
+                        </span>
 
-                        <h3>Reemplazo de display a laptop</h3>
+                        <h3>
+                            Reemplazo de display a laptop
+                        </h3>
 
                     </div>
 
@@ -450,7 +655,9 @@
     </section>
 
 
-    <!-- ================= FRASE ================= -->
+    <!-- =====================================================
+         FRASE
+    ====================================================== -->
 
     <section class="quote-section">
 
@@ -475,16 +682,22 @@
     </section>
 
 
-    <!-- ================= NOSOTROS ================= -->
+    <!-- =====================================================
+         NOSOTROS
+    ====================================================== -->
 
-    <section class="section about" id="nosotros">
+    <section class="section about"
+             id="nosotros">
 
         <div class="container about-grid">
 
             <div class="about-image">
 
                 <div class="about-logo">
-                    <img src="img/logo.png" alt="Gato Barato">
+
+                    <img src="img/logo.png"
+                         alt="Gato Barato">
+
                 </div>
 
             </div>
@@ -515,23 +728,38 @@
                 <div class="about-features">
 
                     <div>
+
                         <i class="fas fa-check-circle"></i>
+
                         Atención personalizada
+
                     </div>
 
+
                     <div>
+
                         <i class="fas fa-check-circle"></i>
+
                         Diagnóstico de equipos
+
                     </div>
 
+
                     <div>
+
                         <i class="fas fa-check-circle"></i>
+
                         Soluciones prácticas
+
                     </div>
 
+
                     <div>
+
                         <i class="fas fa-check-circle"></i>
+
                         Soporte tecnológico
+
                     </div>
 
                 </div>
@@ -543,17 +771,24 @@
     </section>
 
 
-    <!-- ================= CONTACTO ================= -->
+    <!-- =====================================================
+         CONTACTO
+    ====================================================== -->
 
-    <section class="section contact" id="contacto">
+    <section class="section contact"
+             id="contacto">
 
         <div class="container">
 
             <div class="section-title">
 
-                <span>¿Necesitas ayuda?</span>
+                <span>
+                    ¿Necesitas ayuda?
+                </span>
 
-                <h2>Contáctanos</h2>
+                <h2>
+                    Contáctanos
+                </h2>
 
                 <p>
                     Cuéntanos qué necesitas y con gusto te ayudamos.
@@ -566,46 +801,74 @@
 
 
                 <a href="https://wa.me/527858306688"
-                target="_blank"
-                class="contact-card">
+                   target="_blank"
+                   class="contact-card">
 
                     <div class="contact-icon">
+
                         <i class="fab fa-whatsapp"></i>
+
                     </div>
 
                     <div>
-                        <h3>WhatsApp</h3>
-                        <p>785 830 6688</p>
+
+                        <h3>
+                            WhatsApp
+                        </h3>
+
+                        <p>
+                            785 830 6688
+                        </p>
+
                     </div>
 
                 </a>
 
 
                 <a href="tel:7858306688"
-                class="contact-card">
+                   class="contact-card">
 
                     <div class="contact-icon">
+
                         <i class="fas fa-phone"></i>
+
                     </div>
 
                     <div>
-                        <h3>Teléfono</h3>
-                        <p>785 830 6688</p>
+
+                        <h3>
+                            Teléfono
+                        </h3>
+
+                        <p>
+                            785 830 6688
+                        </p>
+
                     </div>
 
                 </a>
 
 
-                <a href="tel:2201501330"
-                class="contact-card">
+                <a href="https://wa.me/522201501330"
+                   target="_blank"
+                   class="contact-card">
 
                     <div class="contact-icon">
-                        <i class="fas fa-mobile-screen"></i>
+
+                        <i class="fab fa-whatsapp"></i>
+
                     </div>
 
                     <div>
-                        <h3>Teléfono / WhatsApp</h3>
-                        <p>220 150 1330</p>
+
+                        <h3>
+                            WhatsApp
+                        </h3>
+
+                        <p>
+                            220 150 1330
+                        </p>
+
                     </div>
 
                 </a>
@@ -624,10 +887,11 @@
                 </p>
 
                 <a href="https://wa.me/527858306688?text=Hola%20Gato%20Barato,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios."
-                target="_blank"
-                class="btn btn-whatsapp">
+                   target="_blank"
+                   class="btn btn-whatsapp">
 
                     <i class="fab fa-whatsapp"></i>
+
                     Escribir por WhatsApp
 
                 </a>
@@ -639,7 +903,9 @@
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
     <footer class="footer">
 
@@ -647,11 +913,14 @@
 
             <div class="footer-brand">
 
-                <img src="img/logo.png" alt="Gato Barato">
+                <img src="img/logo.png"
+                     alt="Gato Barato">
 
                 <div>
 
-                    <h3>Gato Barato</h3>
+                    <h3>
+                        Gato Barato
+                    </h3>
 
                     <p>
                         Soluciones rápidas sin arañar tu bolsillo.
@@ -665,8 +934,8 @@
             <div class="footer-social">
 
                 <a href="https://wa.me/527858306688"
-                target="_blank"
-                aria-label="WhatsApp">
+                   target="_blank"
+                   aria-label="WhatsApp">
 
                     <i class="fab fa-whatsapp"></i>
 
@@ -680,8 +949,11 @@
         <div class="footer-bottom">
 
             <p>
-                © <span id="year"></span> Gato Barato.
+
+                © <span id="year"></span>
+                Gato Barato.
                 Todos los derechos reservados.
+
             </p>
 
         </div>
@@ -689,39 +961,55 @@
     </footer>
 
 
-    <!-- ================= BOTÓN WHATSAPP ================= -->
+    <!-- =====================================================
+         BOTÓN FLOTANTE WHATSAPP
+    ====================================================== -->
 
     <a href="https://wa.me/527858306688"
-    target="_blank"
-    class="floating-whatsapp"
-    aria-label="Contactar por WhatsApp">
+       target="_blank"
+       class="floating-whatsapp"
+       aria-label="Contactar por WhatsApp">
 
         <i class="fab fa-whatsapp"></i>
 
     </a>
 
 
-    <!-- ================= MODAL GALERÍA ================= -->
+    <!-- =====================================================
+         MODAL DE IMÁGENES
+    ====================================================== -->
 
-    <div class="image-modal" id="imageModal">
+    <div class="image-modal"
+         id="imageModal">
 
-        <button class="modal-close" id="modalClose">
+        <button class="modal-close"
+                id="modalClose"
+                aria-label="Cerrar">
+
             <i class="fas fa-xmark"></i>
+
         </button>
+
 
         <div class="modal-content">
 
             <img id="modalImage"
-                src=""
-                alt="">
+                 src=""
+                 alt="">
 
-            <div class="modal-caption" id="modalCaption"></div>
+            <div class="modal-caption"
+                 id="modalCaption">
+            </div>
 
         </div>
 
     </div>
 
 
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
+
 </body>
+
 </html>

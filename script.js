@@ -1,199 +1,369 @@
 /* =========================================================
    GATO BARATO
    SCRIPT.JS
-   ========================================================= */
+========================================================= */
 
 
-/* ================= MENÚ ================= */
+/* =========================================================
+   LOADER
+========================================================= */
 
-const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
+const loader =
+    document.getElementById("loader");
+
+const loaderPercent =
+    document.getElementById("loaderPercent");
 
 
-menuToggle.addEventListener("click", () => {
+document.body.classList.add("loading");
 
-    nav.classList.toggle("active");
 
-    const icon = menuToggle.querySelector("i");
+let progress = 0;
 
-    if (nav.classList.contains("active")) {
 
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
+const progressInterval =
+    setInterval(() => {
 
-    } else {
+        progress += Math.floor(
+            Math.random() * 8
+        ) + 3;
 
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
 
-    }
+        if (progress >= 100) {
+
+            progress = 100;
+
+            clearInterval(progressInterval);
+
+        }
+
+
+        loaderPercent.textContent =
+            progress;
+
+    }, 100);
+
+
+/* Cuando termina de cargar */
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        loaderPercent.textContent = "100";
+
+        loader.classList.add("hidden");
+
+        document.body.classList.remove("loading");
+
+    }, 700);
 
 });
 
 
-/* CERRAR MENÚ AL SELECCIONAR UNA OPCIÓN */
+/* =========================================================
+   MENÚ
+========================================================= */
 
-document.querySelectorAll(".nav a").forEach(link => {
+const menuToggle =
+    document.getElementById("menuToggle");
 
-    link.addEventListener("click", () => {
+const nav =
+    document.getElementById("nav");
 
-        nav.classList.remove("active");
 
-        const icon = menuToggle.querySelector("i");
+menuToggle.addEventListener(
+    "click",
+    () => {
 
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
+        nav.classList.toggle("active");
+
+        const icon =
+            menuToggle.querySelector("i");
+
+
+        if (
+            nav.classList.contains("active")
+        ) {
+
+            icon.classList.remove(
+                "fa-bars"
+            );
+
+            icon.classList.add(
+                "fa-xmark"
+            );
+
+        } else {
+
+            icon.classList.remove(
+                "fa-xmark"
+            );
+
+            icon.classList.add(
+                "fa-bars"
+            );
+
+        }
+
+    }
+);
+
+
+/* Cerrar menú al seleccionar */
+
+document
+    .querySelectorAll(".nav a")
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            () => {
+
+                nav.classList.remove(
+                    "active"
+                );
+
+
+                const icon =
+                    menuToggle.querySelector(
+                        "i"
+                    );
+
+
+                icon.classList.remove(
+                    "fa-xmark"
+                );
+
+                icon.classList.add(
+                    "fa-bars"
+                );
+
+            }
+        );
 
     });
 
-});
+
+/* =========================================================
+   HEADER AL HACER SCROLL
+========================================================= */
+
+const header =
+    document.getElementById("header");
 
 
-/* ================= HEADER ================= */
+window.addEventListener(
+    "scroll",
+    () => {
 
-const header = document.getElementById("header");
+        if (window.scrollY > 50) {
 
+            header.classList.add(
+                "scrolled"
+            );
 
-window.addEventListener("scroll", () => {
+        } else {
 
-    if (window.scrollY > 50) {
+            header.classList.remove(
+                "scrolled"
+            );
 
-        header.classList.add("scrolled");
-
-    } else {
-
-        header.classList.remove("scrolled");
+        }
 
     }
+);
 
-});
 
-
-/* ================= FILTROS ================= */
+/* =========================================================
+   FILTROS DE PORTAFOLIO
+========================================================= */
 
 const filterButtons =
-    document.querySelectorAll(".filter-btn");
+    document.querySelectorAll(
+        ".filter-btn"
+    );
+
 
 const portfolioItems =
-    document.querySelectorAll(".portfolio-item");
+    document.querySelectorAll(
+        ".portfolio-item"
+    );
 
 
 filterButtons.forEach(button => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener(
+        "click",
+        () => {
 
-        /* Quitar active */
+            filterButtons.forEach(
+                btn => {
 
-        filterButtons.forEach(btn => {
+                    btn.classList.remove(
+                        "active"
+                    );
 
-            btn.classList.remove("active");
-
-        });
-
-
-        /* Activar botón */
-
-        button.classList.add("active");
-
-
-        const filter =
-            button.getAttribute("data-filter");
+                }
+            );
 
 
-        portfolioItems.forEach(item => {
+            button.classList.add(
+                "active"
+            );
 
-            const category =
-                item.getAttribute("data-category");
+
+            const filter =
+                button.getAttribute(
+                    "data-filter"
+                );
 
 
-            if (
-                filter === "all" ||
-                category === filter
-            ) {
+            portfolioItems.forEach(
+                item => {
 
-                item.style.display = "block";
+                    const category =
+                        item.getAttribute(
+                            "data-category"
+                        );
 
-                setTimeout(() => {
 
-                    item.style.opacity = "1";
-                    item.style.transform = "translateY(0)";
+                    if (
+                        filter === "all" ||
+                        category === filter
+                    ) {
 
-                }, 50);
+                        item.style.display =
+                            "block";
 
-            } else {
 
-                item.style.opacity = "0";
-                item.style.transform = "translateY(15px)";
+                        setTimeout(
+                            () => {
 
-                setTimeout(() => {
+                                item.style.opacity =
+                                    "1";
 
-                    item.style.display = "none";
+                                item.style.transform =
+                                    "translateY(0)";
 
-                }, 250);
+                            },
+                            50
+                        );
 
-            }
+                    } else {
 
-        });
+                        item.style.opacity =
+                            "0";
 
-    });
+                        item.style.transform =
+                            "translateY(15px)";
+
+
+                        setTimeout(
+                            () => {
+
+                                item.style.display =
+                                    "none";
+
+                            },
+                            250
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+    );
 
 });
 
 
-/* ================= GALERÍA / MODAL ================= */
+/* =========================================================
+   MODAL DE IMÁGENES
+========================================================= */
 
 const modal =
-    document.getElementById("imageModal");
+    document.getElementById(
+        "imageModal"
+    );
+
 
 const modalImage =
-    document.getElementById("modalImage");
+    document.getElementById(
+        "modalImage"
+    );
+
 
 const modalCaption =
-    document.getElementById("modalCaption");
+    document.getElementById(
+        "modalCaption"
+    );
+
 
 const modalClose =
-    document.getElementById("modalClose");
+    document.getElementById(
+        "modalClose"
+    );
 
 
 const viewButtons =
-    document.querySelectorAll(".view-image");
+    document.querySelectorAll(
+        ".view-image"
+    );
 
 
 viewButtons.forEach(button => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener(
+        "click",
+        () => {
 
-        const image =
-            button.getAttribute("data-image");
-
-        const title =
-            button.getAttribute("data-title");
-
-
-        modalImage.src = image;
-
-        modalImage.alt = title;
-
-        modalCaption.textContent = title;
+            const image =
+                button.getAttribute(
+                    "data-image"
+                );
 
 
-        modal.classList.add("active");
+            const title =
+                button.getAttribute(
+                    "data-title"
+                );
 
 
-        document.body.style.overflow = "hidden";
+            modalImage.src = image;
 
-    });
+            modalImage.alt = title;
+
+            modalCaption.textContent =
+                title;
+
+
+            modal.classList.add(
+                "active"
+            );
+
+
+            document.body.style.overflow =
+                "hidden";
+
+        }
+    );
 
 });
 
 
-/* CERRAR MODAL */
+/* Cerrar modal */
 
 function closeModal() {
 
-    modal.classList.remove("active");
+    modal.classList.remove(
+        "active"
+    );
 
-    document.body.style.overflow = "";
+    document.body.style.overflow =
+        "";
 
 }
 
@@ -204,56 +374,75 @@ modalClose.addEventListener(
 );
 
 
-/* CERRAR AL HACER CLICK FUERA */
+/* Cerrar haciendo click fuera */
 
-modal.addEventListener("click", event => {
+modal.addEventListener(
+    "click",
+    event => {
 
-    if (event.target === modal) {
+        if (
+            event.target === modal
+        ) {
 
-        closeModal();
+            closeModal();
 
-    }
-
-});
-
-
-/* CERRAR CON ESC */
-
-document.addEventListener("keydown", event => {
-
-    if (event.key === "Escape") {
-
-        closeModal();
+        }
 
     }
+);
 
-});
+
+/* Cerrar con ESC */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (event.key === "Escape") {
+
+            closeModal();
+
+        }
+
+    }
+);
 
 
-/* ================= AÑO AUTOMÁTICO ================= */
+/* =========================================================
+   AÑO AUTOMÁTICO
+========================================================= */
 
 const year =
     document.getElementById("year");
+
 
 year.textContent =
     new Date().getFullYear();
 
 
-/* ================= ANIMACIONES ================= */
+/* =========================================================
+   ANIMACIONES AL HACER SCROLL
+========================================================= */
 
 const observer =
     new IntersectionObserver(
         entries => {
 
-            entries.forEach(entry => {
+            entries.forEach(
+                entry => {
 
-                if (entry.isIntersecting) {
+                    if (
+                        entry.isIntersecting
+                    ) {
 
-                    entry.target.classList.add("show");
+                        entry.target.classList.add(
+                            "show"
+                        );
+
+                    }
 
                 }
-
-            });
+            );
 
         },
         {
@@ -264,30 +453,39 @@ const observer =
 
 document
     .querySelectorAll(
-        ".service-card, .portfolio-item, .contact-card"
+        ".service-card, " +
+        ".portfolio-item, " +
+        ".contact-card"
     )
     .forEach(element => {
 
-        element.classList.add("animate-on-scroll");
+        element.classList.add(
+            "animate-on-scroll"
+        );
 
         observer.observe(element);
 
     });
 
 
-/* ================= MENSAJE DE ERROR DE IMAGEN ================= */
+/* =========================================================
+   COMPROBAR IMÁGENES
+========================================================= */
 
 document
     .querySelectorAll("img")
     .forEach(image => {
 
-        image.addEventListener("error", () => {
+        image.addEventListener(
+            "error",
+            () => {
 
-            console.warn(
-                "No se encontró la imagen:",
-                image.src
-            );
+                console.warn(
+                    "No se encontró la imagen:",
+                    image.src
+                );
 
-        });
+            }
+        );
 
     });
